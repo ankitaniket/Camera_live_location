@@ -1,7 +1,7 @@
 
 const map = L.map('map'); 
 // Initializes map
-map.setView([51.505, -0.09], 10); 
+map.setView([51.505, -0.09], 17); 
 // Sets initial coordinates and zoom level
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 maxZoom: 19,
@@ -23,9 +23,10 @@ marker = L.marker([lat, lng]).addTo(map);
 circle = L.circle([lat, lng], { radius: accuracy }).addTo(map);
 // Adds marker to the map and a circle for accuracy
 
-if (!zoomed) {
-    zoomed = map.fitBounds(circle.getBounds()); 
-    }
+// if (!zoomed) {
+//     zoomed = map.fitBounds(circle.getBounds()); 
+//     }
+
 // Set zoom to boundaries of accuracy circle
 map.setView([lat, lng]);
 // Set map focus to current user position
