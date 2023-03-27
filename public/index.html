@@ -2,9 +2,12 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Camera Example</title>
+    <title>Camera </title>
 
- <!-- CSS Stylesheets -->
+    <link href='https://fonts.googleapis.com/css?family=Varela Round'>
+
+<!-- CSS Stylesheets  -->
+
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 <!-- Bootstrap Scripts -->
@@ -22,12 +25,13 @@
   </head>
   <body>
 
-    
+    <style></style>
 
-    <div class="text-center"> <h1>Image Capture</h1> </div>
+    <div class="text-center"> <h1>Add Your Data</h1> </div>
       <div class="row">
-      <div class="col ">
-        <div>   
+      <div class="col">
+        <div class="container">   
+          <h1>Pothole Image</h1>
           <video id="camera" width="640" height="480" autoplay></video>
           <canvas id="canvas" width="640" height="480" style="display:none;"></canvas>
           <button id="capture">Capture</button>
@@ -37,7 +41,8 @@
         
       </div>
       <div class="col"> 
-        <div class="map-container">
+        <div class="container">
+          <h1>Current Location</h1>
           <div id="map"></div>
           <script src="map.js"></script>
         </div>

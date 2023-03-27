@@ -5,7 +5,6 @@ map.setView([51.505, -0.09], 17);
 // Sets initial coordinates and zoom level
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 maxZoom: 19,
-attribution: '© <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map); 
 // Sets map data source and associates with map
 let marker, circle, zoomed;
