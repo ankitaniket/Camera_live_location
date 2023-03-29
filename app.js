@@ -38,6 +38,6 @@ app.post('/employee', (req, res) => {
 });
 
 // Start the server
-app.listen(5000, () => {
-  console.log('Server started on http://localhost:5000');
+app.listen(3000, () => {
+  console.log('Server started on http://localhost:3000');
 });
