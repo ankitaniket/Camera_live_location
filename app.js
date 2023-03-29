@@ -11,7 +11,7 @@ const storage = multer.diskStorage({
   filename: function (req, file, cb) {
     cb(null, file.fieldname + '-' + date + path.extname(file.originalname));
   }
-
+  
 });
 
 // Initialize upload middleware
