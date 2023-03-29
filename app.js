@@ -11,6 +11,7 @@ const storage = multer.diskStorage({
   filename: function (req, file, cb) {
     cb(null, file.fieldname + '-' + date + path.extname(file.originalname));
   }
+
 });
 
 // Initialize upload middleware
@@ -37,6 +38,6 @@ app.post('/employee', (req, res) => {
 });
 
 // Start the server
-app.listen(3000, () => {
-  console.log('Server started on http://localhost:3000');
+app.listen(5000, () => {
+  console.log('Server started on http://localhost:5000');
 });
