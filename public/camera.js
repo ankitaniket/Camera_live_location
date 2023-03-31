@@ -19,6 +19,7 @@ const video = document.getElementById('camera');
           fetch('/employee', { method: 'POST', body: formData })
             .then(() => {
               console.log('Image uploaded successfully');
+              window.location.href = 'http://localhost:3000/employee/create';
             })
             .catch((error) => {
               console.error('Error uploading image:', error);

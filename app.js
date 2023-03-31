@@ -32,12 +32,13 @@ app.post('/employee', (req, res) => {
       res.status(500).send({ error: 'An error occurred while uploading the image.' });
     } else {
       // Image uploaded successfully, send success response
-      res.status(200).send({ message: 'Image uploaded successfully.' });
+      // res.status(200).send({ message: 'Image uploaded successfully.' });
+      res.redirect('http://localhost:3000/employee/create');
     }
   });
 });
 
 // Start the server
-app.listen(3000, () => {
-  console.log('Server started on http://localhost:3000');
+app.listen(4000, () => {
+  console.log('Server started on http://localhost:4000');
 });
