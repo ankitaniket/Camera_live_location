@@ -22,6 +22,7 @@ const upload = multer({
 // Serve static files from the public folder
 app.use(express.static(path.join(__dirname, 'public')));
 
+
 // Route for handling image upload
 app.post('/employee', (req, res) => {
   // Handle file upload
@@ -37,7 +38,6 @@ app.post('/employee', (req, res) => {
     }
   });
 });
-
 // Start the server
 app.listen(4000, () => {
   console.log('Server started on http://localhost:4000');
