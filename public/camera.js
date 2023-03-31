@@ -25,4 +25,6 @@ const video = document.getElementById('camera');
               console.error('Error uploading image:', error);
             });
         }, 'image/jpeg', 0.9);
+
+        
       });
