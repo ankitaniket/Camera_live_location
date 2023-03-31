@@ -26,5 +26,4 @@ const video = document.getElementById('camera');
             });
         }, 'image/jpeg', 0.9);
 
-        
       });
